@@ -9,25 +9,23 @@
       
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../arduino/serial/">
       
       
-        <link rel="next" href="../LED_Brink/">
       
-      
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
     
     
       
-        <title>1. 環境構築 - Programming Documents</title>
+        <title>通信 - Programming Documents</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.35e1ed30.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.35e1ed30.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -48,7 +46,7 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -77,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +91,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Programming Documents" class="md-header__button md-logo" aria-label="Programming Documents" data-md-component="logo">
+    <a href=".." title="Programming Documents" class="md-header__button md-logo" aria-label="Programming Documents" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -113,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1. 環境構築
+              通信
             
           </span>
         </div>
@@ -223,7 +221,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Programming Documents" class="md-nav__button md-logo" aria-label="Programming Documents" data-md-component="logo">
+    <a href=".." title="Programming Documents" class="md-nav__button md-logo" aria-label="Programming Documents" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -252,7 +250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -269,20 +267,18 @@
       
   
   
-    
-  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -296,7 +292,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Arduino
@@ -307,18 +303,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../arduino/environment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -327,7 +314,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -339,7 +325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../LED_Brink/" class="md-nav__link">
+      <a href="../arduino/LED_Brink/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -359,7 +345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../serial/" class="md-nav__link">
+      <a href="../arduino/serial/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -384,9 +370,29 @@
       
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../communication/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    通信
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -395,6 +401,54 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#uart" class="md-nav__link">
+    UART
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sbus" class="md-nav__link">
+    S.BUS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i2c" class="md-nav__link">
+    I2C
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spi" class="md-nav__link">
+    SPI
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -419,6 +473,42 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#uart" class="md-nav__link">
+    UART
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sbus" class="md-nav__link">
+    S.BUS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i2c" class="md-nav__link">
+    I2C
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spi" class="md-nav__link">
+    SPI
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -435,19 +525,25 @@
   
 
 
-<h1 id="1">1. 環境構築</h1>
-<p>Arduino webページを参照してください<br />
-<a href="https://www.arduino.cc/en/software">https://www.arduino.cc/en/software</a></p>
-<p>Arduino IDEを公式HPよりダウンロードし，インストールしてください．</p>
-<h1 id="nucleo64">Nucleo64ボード向けのセットアップ</h1>
-<p>ドキュメントを参照してください<br />
-<a href="https://github.com/stm32duino/Arduino_Core_STM32/wiki/Getting-Started">https://github.com/stm32duino/Arduino_Core_STM32/wiki/Getting-Started</a></p>
-<ol>
-<li><strong>File (ファイル)</strong>から<strong>Preferences (基本設定)</strong>を開く</li>
-<li><strong>Additional boards managers URLs (追加のボードマネージャーのURL)</strong>に<code>https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectronics_index.json</code>を追記する</li>
-<li><strong>BOARDS MANAGER (ボードマネージャ)</strong>で<em>STM32</em>と検索し，<strong>STM32 MCU based boards</strong>をインストールする</li>
-</ol>
-<p><img alt="" src="../res/boardManager.png" /></p>
+<h1 id="_1">通信</h1>
+<h2 id="uart">UART</h2>
+<p>1対1の双方向通信に用いられる通信方式である．送信用，受信用にそれぞれ1本の信号線が必要であり合計で2本の信号線を接続する．
+通信するデバイス間で同じ設定にしなければ通信できないので注意が必要である．</p>
+<p>主な設定項目は，通信速度およびパリティビット，ストップビットである．
+<strong>通信速度</strong>は<em>9600bps</em>や<em>115200bps</em>がよく使用される．
+<strong>パリティビット</strong>は通信の誤りを検出するために使用される．送信データ８bitにパリティビット (1bit) を付与し，1byteのデータの中に1が偶数個もしくは奇数個となるように調整する．
+1が偶数個となるとき<em>even parity</em>，1が奇数個となるとき<em>odd parity</em>と言う．</p>
+<p>くわしくは<a href="https://www.rohm.co.jp/electronics-basics/micon/mi_what9">ROHMのwebページ</a>をご覧ください．</p>
+<h2 id="sbus">S.BUS</h2>
+<p>UARTにおいて設定を100000bps, even parity, 2ストップビットとし，通信信号を反転させたものをいう．
+Futabaの受信機を扱うときに，S.BUSに出会うことが多い．また，使用するときは1方向の通信であることが多い．
+NOT回路を用いて信号を反転させることでUARTとして扱うことが可能であるため，マイコンなどではNOT回路と合わせて使用される．</p>
+<h2 id="i2c">I2C</h2>
+<p>センサとマイコンやマイコン同士の通信に使用される通信方式である．データ信号の線(SDA)と信号同期のためのクロック線(SCL)の２本の線で構成されるバスにデバイスを接続する．
+I2Cの特徴は，１つのバスに複数のデバイスを接続することで任意の２デバイス間の通信が可能なことである．</p>
+<p>くわしくは<a href="https://www.rohm.co.jp/electronics-basics/micon/mi_what7">ROHMのwebページ</a>をご覧ください．</p>
+<h2 id="spi">SPI</h2>
+<p>くわしくは<a href="https://www.rohm.co.jp/electronics-basics/micon/mi_what8">ROHMのwebページ</a>をご覧ください．</p>
 
   <hr>
 <div class="md-source-file">
@@ -519,16 +615,16 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "content.code.annotate"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.aecac24b.min.js"></script>
+      <script src="../assets/javascripts/bundle.aecac24b.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
       
-        <script src="../../javascripts/config.js"></script>
+        <script src="../javascripts/config.js"></script>
       
     
   </body>
